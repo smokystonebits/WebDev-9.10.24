@@ -1,1 +1,42 @@
-
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Greeting Page</title>
+		<style>
+		h1 {
+			font-size: 14pt;
+			text-align: center;
+			}
+		body {
+			background-color: #eec0c8;
+			font-family: Georgia;
+			}
+    button {
+      background-color: rgb(245, 66, 132);
+      padding: 33px;
+      }
+    button:hover {
+        background-color: #ffffff;
+              }
+		</style>
+	</head>
+	<body>
+		<h1> Welcome to my page! </h1>
+		<p>This is a simple webpage created as a learning exercise.</p>
+		<p> 
+		<button onclick="myFunction()">Click for a greeting</button>
+		</p>
+		<p>
+		<div id="message1" style="display: none;">
+		  Hello, welcome to the world of coding! That was a tough one!
+		</div>
+		</p>
+	  <script>
+	   function myFunction(){
+	     var text = document.getElementbyID("message1");
+	     text.style.display = "block";
+	   }
+	  </script>
+	</body>
+</html>
